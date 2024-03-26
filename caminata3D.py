@@ -40,7 +40,6 @@ def simular_movimiento_hasta_posicion_3D(posicion_objetivo, lista_aleatoria):
 # Parámetros de la simulación
 posicion_objetivo_3D = (45, 23, 17)
 
-
 # Medir el tiempo de ejecución
 start_time = time.time()
 

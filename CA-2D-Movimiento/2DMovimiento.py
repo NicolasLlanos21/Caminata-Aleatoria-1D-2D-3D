@@ -7,7 +7,7 @@ import math
 
 class LectorCSV:
     def __init__(self, nombre_archivo, columna):
-        self.datos = []
+        self.datos = [] 
         self.indice = 0
         
         with open(nombre_archivo, 'r') as archivo:
@@ -23,7 +23,7 @@ class LectorCSV:
         else:
             return None
 
-# Ejemplo de uso
+# Se lee el csv
 lector = LectorCSV('CA-2D-Movimiento\distribucionUniforme.csv', 'pseudoaleatorios')
 
 
@@ -133,7 +133,7 @@ punto_actual = [0, 0]  # Iniciar en el centro
 camino_x, camino_y = [punto_actual[0]], [punto_actual[1]]
 
 # Cargar la imagen de la rana
-imagen_rana = plt.imread("CA-2D-Movimiento/rana.png")  # Asegúrate de tener la imagen "rana.png" en la misma carpeta que este script
+imagen_rana = plt.imread("CA-2D-Movimiento/rana.png")
 
 # Graficar el punto inicial en el gráfico
 ax.plot(punto_actual[0], punto_actual[1], marker='o', color='red', markersize=10)  # Punto rojo
@@ -164,7 +164,7 @@ meta_reached = False
 # Lista para almacenar las posiciones de la rana
 posiciones_rana = []
 
-# Programar la primera llamada a mover_punto después de 500 milisegundos (0.5 segundos)
+# Programar la primera llamada a mover_punto
 root.after(1, mover_punto)
 
 # Configurar la función de cierre al cerrar la ventana

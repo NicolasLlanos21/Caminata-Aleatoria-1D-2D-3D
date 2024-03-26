@@ -26,7 +26,7 @@ num_saltos = 1000000
 start_time = time.time()
 
 # Generar una lista de un millón de números aleatorios entre 0 y 1
-lista_aleatoria = uniforme.generarDistrUniforme(1,0,315366927,num_saltos)
+lista_aleatoria = uniforme.generarDistrUniforme(1,0,None,num_saltos)
 
 # Simular el movimiento de la rana
 frecuencias = simular_movimiento(num_saltos, lista_aleatoria)
